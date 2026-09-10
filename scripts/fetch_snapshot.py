@@ -57,6 +57,9 @@ def main() -> int:
 - 摘要复制：{totals.get('task_summary_copy', 0)}
 - 链接复制：{totals.get('task_link_copy', 0)}
 - 独立链接打开：{totals.get('task_permalink_open', 0)}
+- 任务图片生成：{totals.get('task_image_generate', 0)}
+- 首次发布任务：{totals.get('tasks_published', 0)}
+- 公开修改任务：{totals.get('tasks_updated', 0)}
 - SHA-256：`{digest}`
 
 {payload.get('periodNote') or '本月为完整自然月统计期。'}
